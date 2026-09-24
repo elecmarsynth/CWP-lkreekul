@@ -51,7 +51,7 @@ def checkmate (board) :
       )
 
       for r_p, c_p in pawnCoord :
-            if 0 <= r_p < size or 0 <= c_p < size :
+            if 0 <= r_p < size and 0 <= c_p < size :
                   if (grid[r_p][c_p] == "P") :
                         print("Success")
                         return
