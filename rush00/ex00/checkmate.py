@@ -1,14 +1,14 @@
 def checkmate (board) :
       grid = board.strip().split('\n')
       size = len(grid)
-      
+
       if size == 0:
             print("Fail")
             return
 
       for row in grid:
             if len(row) != size:
-                  print("Fail") 
+                  print("is not square") 
                   return
 
       k_row, k_col = -1,-1
